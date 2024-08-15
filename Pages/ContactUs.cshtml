@@ -1,0 +1,55 @@
+﻿@page
+@model ArtWorkStore.Pages.Index1Model
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container mt-4">
+    <div class="text-center">
+        <h1 class="display-4">Get in Touch</h1>
+        <p class="lead">We're here to help you with any questions or concerns.</p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> support@artstore.com</li>
+                <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+                <li><strong>Address:</strong> 123 Art Lane, Creativity City, CA 90001</li>
+            </ul>
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Contact Form</h2>
+            <form method="post" action="/contact">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-5 text-center">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us through our social media channels:</p>
+        <a href="https://facebook.com/artstore" class="btn btn-secondary">Facebook</a>
+        <a href="https://instagram.com/artstore" class="btn btn-secondary">Instagram</a>
+        <a href="https://twitter.com/artstore" class="btn btn-secondary">Twitter</a>
+    </div>
+</div>
